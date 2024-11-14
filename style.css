@@ -1,1 +1,89 @@
-#Main,#Main1{display:grid}#name,.waviy span{text-transform:uppercase;color:#fff}body{background-color:#9708bb;margin:0}#Main{height:100vh;grid-template-rows:80% 20%}#Main1{grid-template-rows:60% 40%}#first{display:flex;justify-content:center;align-items:end}.waviy{display:flex;justify-content:center;align-items:center;-webkit-box-reflect:below -80% linear-gradient(transparent,rgba(15,79,139,0.5));font-size:60px}.waviy span{animation:3s infinite waviy;animation-delay:calc(.3s * var(--i))}@keyframes waviy{0%,100%,40%{transform:translateY(0)}20%{transform:translateY(-20px)}}#name{background-image:linear-gradient(-225deg,#231557 0,#44107a 29%,#ff1361 67%,#fff800 100%);background-size:200% auto;background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;animation:4s linear infinite textclip;display:inline-block;font-size:190px}@keyframes textclip{to{background-position:200% center}}
+body {
+    background-color: rgb(151, 8, 187);
+    margin: 0%;
+    height: 100vh;
+    width: 100vw;
+}
+
+#Main {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 80% 20%;
+}
+
+#Main1 {
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 60% 40%;
+}
+
+#first {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.waviy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+.waviy {
+    -webkit-box-reflect: below -80% linear-gradient(transparent, rgba(15, 79, 139, 0.5));
+    font-size: 60px;
+}
+
+.waviy span {
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 3s infinite;
+    animation-delay: calc(.3s * var(--i));
+
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+
+#name {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
