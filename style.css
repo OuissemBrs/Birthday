@@ -1,25 +1,25 @@
 body {
     background-color: rgb(151, 8, 187);
     margin: 0%;
-    height: 100vh;
-    width: 100vw;
+    height: 1080px;
+    width: 1920px;
 }
 
 #Main {
-    height: 100vh;
-    width: 100vw;
+    height: 1080px;
+    width: 1920px;
     display: grid;
     grid-template-rows: 80% 20%;
 }
 
 #Main1 {
-    width: 100vw;
+    width: 1920px;
     display: grid;
     grid-template-rows: 60% 40%;
 }
 
 #first {
-    width: 100vw;
+    width: 1920px;
     display: flex;
     justify-content: center;
     align-items: end;
