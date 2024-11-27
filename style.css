@@ -38,7 +38,7 @@ body {
 
 .waviy {
     -webkit-box-reflect: below -80% linear-gradient(transparent, rgba(15, 79, 139, 0.5));
-    font-size: 60px;
+    font-size: 40px;
 }
 
 .waviy span {
@@ -79,7 +79,7 @@ body {
     -webkit-text-fill-color: transparent;
     animation: textclip 4s linear infinite;
     display: inline-block;
-    font-size: 190px;
+    font-size: 120px;
 }
 
 @keyframes textclip {
